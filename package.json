@@ -1,0 +1,31 @@
+{
+  "name": "arena-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tVeratti/arena-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tVeratti/arena-web/issues"
+  },
+  "homepage": "https://github.com/tVeratti/arena-web#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.5.1",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.16",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
