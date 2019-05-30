@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home">
       <h1>Arena Project Testing</h1>
-      <div>Updated: May 28, 2019</div>
+      <div>Updated: May 30, 2019</div>
       <a href="./static/arena.zip">Download .zip</a>
 
       {/* <h2>Dev Blogs</h2>
