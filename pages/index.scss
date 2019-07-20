@@ -1,4 +1,5 @@
 @import 'reset';
+@import '../components/colors';
 
 html,
 body,
@@ -7,11 +8,13 @@ body,
 }
 
 .home {
+  position: relative;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   color: rgba(white, 0.5);
-  background: #2a2227;
+  background: #333;
+  background: linear-gradient(0deg, #222 0%, #444 100%);
   text-align: center;
 }
 
@@ -24,11 +27,49 @@ a,
 a:visited {
   display: inline-block;
   text-align: center;
-  color: white;
+  color: $color-friendly;
   padding: 20px;
   margin: 20px;
-  border: 1px solid rgba(white, 0.4);
+  border: 1px solid rgba(white, 0.1);
   text-decoration: none;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home__banner {
+  position: relative;
+}
+
+.home__background {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  background-image: url('/static/images/grid.png');
+  opacity: 0.5;
+}
+
+.home__characters {
+  padding: 10px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(white, 0.1);
+  border-right: 0;
+  border-left: 0;
+
+  img {
+    display: inline-block;
+    width: 50%;
+    max-width: 100px;
+  }
+}
+
+.home__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: #111;
 }
